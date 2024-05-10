@@ -141,9 +141,10 @@ input:focus{
     border-radius:9px;
     border: 1px solid #4D5562;
     text-align: left;
+    cursor: pointer;
 }
 
- .Continue-btn{
+ #continue-topics-btn{
     width:35%;
     display:flex;
     margin: 0 auto;
@@ -189,6 +190,7 @@ input:focus{
 
 .container-summary h2{
     font-size: 1.25rem;
+    font-weight:500;
 }
 
 .user-info{
@@ -198,12 +200,31 @@ input:focus{
     color:#A1A1A9;
 }
 
+.user-info span{
+    display:flex;
+    gap:0.2rem;
+}
+
+.user-info p{
+    color:#E5E7EB;
+    font-weight: 500;
+}
+
 .user-topics-selected span{
     color:#A1A1A9;
 }
 
 .user-topics-selected ul{
     transform: translateX(25px);
+    display:flex;
+    flex-direction: column;
+    gap:0.6rem;
+    margin-top:5px;
+}
+
+.user-topics-selected p{
+    color:#E5E7EB;
+    font-weight: 500;
 }
 
 .container-summary button{
@@ -264,13 +285,31 @@ input:focus{
         min-width:360px;
     }
 
-    .first-step, .second-step, .third-step{
+    .first-step{
         position:absolute;
         bottom:40px;
         display:flex;
         align-items: center;
         gap:1rem;
-        transform: translateX(-40px);
+        transform: translate(-40px, -10px);
+    }
+
+    .second-step{
+        position:absolute;
+        bottom:40px;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        transform: translate(70px, -20px);
+    }
+
+    .third-step{
+        position:absolute;
+        bottom:40px;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        transform: translate(65px, -45px);
     }
 
     .topics-page h2{
@@ -292,16 +331,36 @@ input:focus{
     }
 
     .container, .topics-page, .container-summary, .thank-you-page{
-        min-width:310px;
+        min-width:320px;
+        justify-content: center;
+        
     }
 
-    .first-step, .second-step, .third-step{
+    .first-step{
         position:absolute;
         bottom:40px;
         display:flex;
         align-items: center;
         gap:1rem;
-        transform: translateX(-40px);
+        transform: translate(-40px, -10px);
+    }
+
+    .second-step{
+        position:absolute;
+        bottom:40px;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        transform: translate(45px, -20px);
+    }
+
+    .third-step{
+        position:absolute;
+        bottom:40px;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        transform: translate(50px, -35px);
     }
 
     .topics-page h2{
